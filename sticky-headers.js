@@ -5,10 +5,10 @@ $(document).ready(function(){
 	var sectionHeaderHeight = $('.title').height();
 	var sec0 = $('#section0').height() + topHeight + navHeight;
 	var sec1 = $('#section1').height() + sec0 + sectionHeaderHeight;
-	var sec2 = $(headers[1][1]).height() + sec1 + sectionHeaderHeight;
-	var sec3 = $(headers[2][1]).height() + sec2 + sectionHeaderHeight;
-	var sec4 = $(headers[3][1]).height() + sec3 + sectionHeaderHeight;
-	var sec5 = $(headers[4][1]).height() + sec4 + sectionHeaderHeight;
+	var sec2 = $('#section2').height() + sec1 + sectionHeaderHeight;
+	var sec3 = $('#section3').height() + sec2 + sectionHeaderHeight;
+	var sec4 = $('#section4').height() + sec3 + sectionHeaderHeight;
+	var sec5 = $('#section5').height() + sec4 + sectionHeaderHeight;
 	$(document).scroll(function(){
 		if($(this).scrollTop() >= topHeight) {
 			if(!fixed) {
@@ -24,7 +24,7 @@ $(document).ready(function(){
 			}
 		}
 
-		var headers = [['#sectionHeader1', '#section1'], ['#sectionHeader2', '#section2'], ['#sectionHeader3', '#section3'], ['#sectionHeader4', '#section4'], ['#sectionHeader5', '#section5']];
+		var headers = [['#sectionHeader1', '#section1'], ['#sectionHeader2', '#section2'], ['#sectionHeader3', '#section3'], ['#sectionHeader4', '#section4'], ['#sectionHeader5', '#section5']]
 
 		if(($(this).scrollTop() >= sec0) && ($(this).scrollTop() < sec1)) {
 			$(headers[0][0]).css({position:'fixed', top:'0px'});
