@@ -24,7 +24,7 @@ $(document).ready(function(){
 			}
 		}
 
-		var headers = [['#sectionHeader1', '#section1'], ['#sectionHeader2', headers[1][1]], ['#sectionHeader3', headers[2][1]], ['#sectionHeader4', headers[3][1]], ['#sectionHeader5', headers[4][1]]]
+		var headers = [['#sectionHeader1', '#section1'], ['#sectionHeader2', '#section2'], ['#sectionHeader3', '#section3'], ['#sectionHeader4', '#section4'], ['#sectionHeader5', '#section5']];
 
 		if(($(this).scrollTop() >= sec0) && ($(this).scrollTop() < sec1)) {
 			$(headers[0][0]).css({position:'fixed', top:'0px'});
